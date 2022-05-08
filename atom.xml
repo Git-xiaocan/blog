@@ -3,11 +3,11 @@
   <title>Xiaocan &#39; s Blog</title>
   
   <subtitle>写字的地方</subtitle>
-  <link href="http://banatech.org/atom.xml" rel="self"/>
+  <link href="https://banatech.org/atom.xml" rel="self"/>
   
-  <link href="http://banatech.org/"/>
+  <link href="https://banatech.org/"/>
   <updated>2022-05-08T08:57:24.054Z</updated>
-  <id>http://banatech.org/</id>
+  <id>https://banatech.org/</id>
   
   <author>
     <name>xiaocan</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>hello</title>
-    <link href="http://banatech.org/2022/05/08/hello.html"/>
-    <id>http://banatech.org/2022/05/08/hello.html</id>
+    <link href="https://banatech.org/2022/05/08/hello.html"/>
+    <id>https://banatech.org/2022/05/08/hello.html</id>
     <published>2022-05-08T08:56:45.000Z</published>
     <updated>2022-05-08T08:57:24.054Z</updated>
     
@@ -34,14 +34,14 @@
     
     
     
-    <category term="Go" scheme="http://banatech.org/tags/Go/"/>
+    <category term="Go" scheme="https://banatech.org/tags/Go/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://banatech.org/2022/05/08/hello-world.html"/>
-    <id>http://banatech.org/2022/05/08/hello-world.html</id>
+    <link href="https://banatech.org/2022/05/08/hello-world.html"/>
+    <id>https://banatech.org/2022/05/08/hello-world.html</id>
     <published>2022-05-08T07:55:40.583Z</published>
     <updated>2022-05-08T07:55:40.583Z</updated>
     
