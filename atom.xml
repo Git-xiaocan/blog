@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xiaocan &#39; s Blog</title>
+  <title>Li &#39; s Blog</title>
   
   <subtitle>写字的地方</subtitle>
   <link href="https://banatech.org/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://banatech.org/</id>
   
   <author>
-    <name>xiaocan</name>
+    <name>Li</name>
     
   </author>
   
