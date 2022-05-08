@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Xiaocan&#39;s Blog</title>
+  <title>Xiaocan &#39; s Blog</title>
   
-  
+  <subtitle>写字的地方</subtitle>
   <link href="http://banatech.org/atom.xml" rel="self"/>
   
   <link href="http://banatech.org/"/>
@@ -10,7 +10,7 @@
   <id>http://banatech.org/</id>
   
   <author>
-    <name>xisocan</name>
+    <name>xiaocan</name>
     
   </author>
   
