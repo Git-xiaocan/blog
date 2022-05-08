@@ -6,7 +6,7 @@
   <link href="http://banatech.org/atom.xml" rel="self"/>
   
   <link href="http://banatech.org/"/>
-  <updated>2022-05-08T07:55:40.583Z</updated>
+  <updated>2022-05-08T08:57:24.054Z</updated>
   <id>http://banatech.org/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello</title>
+    <link href="http://banatech.org/2022/05/08/hello.html"/>
+    <id>http://banatech.org/2022/05/08/hello.html</id>
+    <published>2022-05-08T08:56:45.000Z</published>
+    <updated>2022-05-08T08:57:24.054Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">mian</span><span class="params">()</span></span>&#123;</span><br><span class="line">fmt.Println(<span class="string">&quot;hello&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;l</summary>
+      
+    
+    
+    
+    
+    <category term="Go" scheme="http://banatech.org/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
