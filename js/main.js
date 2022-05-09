@@ -21,7 +21,8 @@
                 ? "touchstart"
                 : "click",
         isWX = /micromessenger/i.test(navigator.userAgent),
-        noop = function () {},
+        noop = function () {
+        },
         offset = function (el) {
             var x = el.offsetLeft,
                 y = el.offsetTop;
@@ -240,7 +241,7 @@
                     even,
                     function (e) {
                         !fab.contains(e.target) &&
-                            pageShare.classList.remove("in");
+                        pageShare.classList.remove("in");
                     },
                     false
                 );
@@ -264,7 +265,8 @@
         },
         reward: function () {
             var modal = new this.modal("#reward");
-            $("#rewardBtn").addEventListener(even, modal.toggle);
+            // $("#rewardBtn").addEventListener(even, modal.toggle);
+            $("#rewardBtn").addEventListener(even, "click");
 
             var $rewardToggle = $("#rewardToggle");
             var $rewardCode = $("#rewardCode");
