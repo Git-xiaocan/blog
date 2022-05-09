@@ -6,7 +6,7 @@
         gotop = $("#gotop"),
         menu = $("#menu"),
         header = $("#header"),
-        // mask = $("#mask"),
+        mask = $("#mask"),
         menuToggle = $("#menu-toggle"),
         menuOff = $("#menu-off"),
         loading = $("#loading"),
@@ -73,7 +73,7 @@
                 menu.classList.remove("hide");
 
                 if (w.innerWidth < 1241) {
-                    // mask.classList.add("in");
+                    mask.classList.add("in");
                     menu.classList.add("show");
 
                     if (isWX) {
@@ -86,7 +86,7 @@
                 }
             } else {
                 menu.classList.remove("show");
-                // mask.classList.remove("in");
+                mask.classList.remove("in");
                 if (isWX) {
                     var top = main.scrollTop;
                     main.classList.remove("lock");
@@ -217,7 +217,7 @@
                     : _this.show();
             };
 
-            Blog.hideOnMask.push(this.hide);
+            // Blog.hideOnMask.push(this.hide);
             this.$off && this.$off.addEventListener(even, this.hide);
         },
         share: function () {
@@ -547,18 +547,17 @@
         false
     );
 
-    // mask.addEventListener(
-    //     even,
-    //     function (e) {
-    //         Blog.toggleMenu();
-    //         Blog.hideOnMask.forEach(function (hide) {
-    //             console.log(hide)
-    //             hide();
-    //         });
-    //         e.preventDefault();
-    //     },
-    //     false
-    // );
+    mask.addEventListener(
+        even,
+        function (e) {
+            Blog.toggleMenu();
+            Blog.hideOnMask.forEach(function (hide) {
+                hide();
+            });
+            e.preventDefault();
+        },
+        false
+    );
 
     d.addEventListener(
         "scroll",
