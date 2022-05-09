@@ -6,7 +6,7 @@
         gotop = $("#gotop"),
         menu = $("#menu"),
         header = $("#header"),
-        mask = $("#mask"),
+        // mask = $("#mask"),
         menuToggle = $("#menu-toggle"),
         menuOff = $("#menu-off"),
         loading = $("#loading"),
@@ -73,7 +73,7 @@
                 menu.classList.remove("hide");
 
                 if (w.innerWidth < 1241) {
-                    mask.classList.add("in");
+                    // mask.classList.add("in");
                     menu.classList.add("show");
 
                     if (isWX) {
@@ -86,7 +86,7 @@
                 }
             } else {
                 menu.classList.remove("show");
-                mask.classList.remove("in");
+                // mask.classList.remove("in");
                 if (isWX) {
                     var top = main.scrollTop;
                     main.classList.remove("lock");
@@ -193,7 +193,7 @@
             var _this = this;
 
             this.show = function () {
-                mask.classList.add("in");
+                // mask.classList.add("in");
                 _this.$modal.classList.add("ready");
                 setTimeout(function () {
                     _this.$modal.classList.add("in");
@@ -204,7 +204,7 @@
 
             this.hide = function () {
                 _this.onHide();
-                mask.classList.remove("in");
+                // mask.classList.remove("in");
                 _this.$modal.classList.remove("in");
                 setTimeout(function () {
                     _this.$modal.classList.remove("ready");
@@ -265,8 +265,7 @@
         },
         reward: function () {
             var modal = new this.modal("#reward");
-            // $("#rewardBtn").addEventListener(even, modal.toggle);
-            $("#rewardBtn").addEventListener(even, "click");
+            $("#rewardBtn").addEventListener(even, modal.toggle);
 
             var $rewardToggle = $("#rewardToggle");
             var $rewardCode = $("#rewardCode");
@@ -548,17 +547,18 @@
         false
     );
 
-    mask.addEventListener(
-        even,
-        function (e) {
-            Blog.toggleMenu();
-            Blog.hideOnMask.forEach(function (hide) {
-                hide();
-            });
-            e.preventDefault();
-        },
-        false
-    );
+    // mask.addEventListener(
+    //     even,
+    //     function (e) {
+    //         Blog.toggleMenu();
+    //         Blog.hideOnMask.forEach(function (hide) {
+    //             console.log(hide)
+    //             hide();
+    //         });
+    //         e.preventDefault();
+    //     },
+    //     false
+    // );
 
     d.addEventListener(
         "scroll",

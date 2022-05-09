@@ -3170,7 +3170,7 @@ pre .inheritance,
 pre .header,
 pre .ruby .symbol,
 pre .xml .cdata {
-  color: #4271ae;
+  color: #3f6ca6;
 }
 pre .selector-tag,
 pre .css .hexcolor,
@@ -3185,7 +3185,7 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #4271ae;
+  color: #3f6ca6;
 }
 pre .selector-id,
 pre .selector-class,
@@ -4384,7 +4384,7 @@ pre .javascript .function {
   position: fixed;
   top: 24%;
   left: 50%;
-  z-index: 120;
+  z-index: 999;
   padding: 30px;
   text-align: center;
   color: #727272;
@@ -4761,7 +4761,7 @@ pre .javascript .function {
   width: 180px;
   height: 30px;
   line-height: 30px;
-  background: #eee;
+  background: #3f6ca6;
   border-radius: 3px;
   overflow: hidden;
   user-select: none;
@@ -4781,6 +4781,7 @@ pre .javascript .function {
   text-align: center;
   color: #fff;
   font-size: 12px;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
 }
 .reward-toggle .alipay {
   background: #1e88e5;
