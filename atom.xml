@@ -6,7 +6,7 @@
   <link href="https://banatech.org/atom.xml" rel="self"/>
   
   <link href="https://banatech.org/"/>
-  <updated>2022-05-09T06:46:30.612Z</updated>
+  <updated>2022-05-09T15:06:55.657Z</updated>
   <id>https://banatech.org/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>xiaowang</title>
+    <link href="https://banatech.org/20220509/xiaowang.html"/>
+    <id>https://banatech.org/20220509/xiaowang.html</id>
+    <published>2022-05-09T15:06:06.000Z</published>
+    <updated>2022-05-09T15:06:55.657Z</updated>
+    
+    <content type="html"><![CDATA[<p>1213<br>313 1</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;1213&lt;br&gt;313 1&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>test_create</title>
