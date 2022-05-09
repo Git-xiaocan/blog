@@ -3449,7 +3449,7 @@ pre .javascript .function {
   right: 56px;
   z-index: 96;
   width: 260px;
-  padding: 16px  6px;
+  padding: 16px 6px;
   background: #fff;
   border-radius: 3px;
   visibility: hidden;
@@ -4224,11 +4224,11 @@ pre .javascript .function {
 }
 .page-content figure,
 .page-content pre {
-  margin-left: 0!important;
-  margin-right: 0!important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 .page-content figure {
-  padding: 20px!important;
+  padding: 20px !important;
 }
 .page-content > figure,
 .page-content > pre {
@@ -4341,7 +4341,7 @@ pre .javascript .function {
 }
 .page-about-me {
   position: relative;
-  padding: 30px 35px!important;
+  padding: 30px 35px !important;
 }
 .page-about-me .avatar {
   margin-right: 35px;
@@ -4358,7 +4358,7 @@ pre .javascript .function {
 .page-about-me .content p {
   margin-top: 0;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 760px) {
   .page-content {
     margin-left: -16px;
     margin-right: -16px;
@@ -4366,8 +4366,12 @@ pre .javascript .function {
   .page-content .column {
     display: block;
   }
+  .comments {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
   .page-about-me {
-    padding: 15px 20px!important;
+    padding: 15px 20px !important;
   }
   .page-about-me .avatar {
     margin-right: 20px;
@@ -4803,6 +4807,8 @@ pre .javascript .function {
 }
 .img-lightbox {
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .img-lightbox.ready {
   position: relative;
