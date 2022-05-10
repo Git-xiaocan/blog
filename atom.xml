@@ -18,8 +18,8 @@
   
   <entry>
     <title>xiaowang</title>
-    <link href="https://banatech.org/20220509/fcdbc4578970/"/>
-    <id>https://banatech.org/20220509/fcdbc4578970/</id>
+    <link href="https://banatech.org/20220509/fcdbc4578970.html"/>
+    <id>https://banatech.org/20220509/fcdbc4578970.html</id>
     <published>2022-05-09T15:06:06.000Z</published>
     <updated>2022-05-09T15:06:55.657Z</updated>
     
@@ -39,12 +39,12 @@
   
   <entry>
     <title>test_create</title>
-    <link href="https://banatech.org/20220509/e60b93bae6c1/"/>
-    <id>https://banatech.org/20220509/e60b93bae6c1/</id>
+    <link href="https://banatech.org/20220509/e60b93bae6c1.html"/>
+    <id>https://banatech.org/20220509/e60b93bae6c1.html</id>
     <published>2022-05-09T06:35:54.000Z</published>
     <updated>2022-05-09T06:46:30.612Z</updated>
     
-    <content type="html"><![CDATA[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/.org//1.jpg" alt="logo" title>                </div>                <div class="image-caption">logo</div>            </figure>]]></content>
+    <content type="html"><![CDATA[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/20220509/e60b93bae6c1/1.jpg" alt="logo" title>                </div>                <div class="image-caption">logo</div>            </figure>]]></content>
     
     
       
@@ -64,8 +64,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://banatech.org/20220508/048a3d05d53b/"/>
-    <id>https://banatech.org/20220508/048a3d05d53b/</id>
+    <link href="https://banatech.org/20220508/048a3d05d53b.html"/>
+    <id>https://banatech.org/20220508/048a3d05d53b.html</id>
     <published>2022-05-08T14:53:58.073Z</published>
     <updated>2022-05-08T14:53:58.074Z</updated>
     
@@ -92,8 +92,8 @@
   
   <entry>
     <title>hello_wod</title>
-    <link href="https://banatech.org/20220508/1b24a4ace700/"/>
-    <id>https://banatech.org/20220508/1b24a4ace700/</id>
+    <link href="https://banatech.org/20220508/1b24a4ace700.html"/>
+    <id>https://banatech.org/20220508/1b24a4ace700.html</id>
     <published>2022-05-08T08:56:45.000Z</published>
     <updated>2022-05-08T12:09:50.914Z</updated>
     
