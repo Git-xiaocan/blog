@@ -6,7 +6,7 @@
   <link href="https://banatech.org/atom.xml" rel="self"/>
   
   <link href="https://banatech.org/"/>
-  <updated>2022-05-09T15:06:55.657Z</updated>
+  <updated>2022-05-09T06:46:30.612Z</updated>
   <id>https://banatech.org/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>xiaowang</title>
-    <link href="https://banatech.org/20220509/fcdbc4578970.html"/>
-    <id>https://banatech.org/20220509/fcdbc4578970.html</id>
-    <published>2022-05-09T15:06:06.000Z</published>
-    <updated>2022-05-09T15:06:55.657Z</updated>
-    
-    <content type="html"><![CDATA[<p>1213<br>313 1</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;1213&lt;br&gt;313 1&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>test_create</title>
@@ -87,30 +66,6 @@
     <category term="C++" scheme="https://banatech.org/tags/C/"/>
     
     <category term="java" scheme="https://banatech.org/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hello_wod</title>
-    <link href="https://banatech.org/20220508/1b24a4ace700.html"/>
-    <id>https://banatech.org/20220508/1b24a4ace700.html</id>
-    <published>2022-05-08T08:56:45.000Z</published>
-    <updated>2022-05-08T12:09:50.914Z</updated>
-    
-    <content type="html"><![CDATA[<p>helosdjojasdiojsadjas<br>das<br>d<br>as<br>d sa<br>dsa</p><p>d asd</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">mian</span><span class="params">()</span></span>&#123;</span><br><span class="line">fmt.Println(<span class="string">&quot;我是你爸爸&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;helosdjojasdiojsadjas&lt;br&gt;das&lt;br&gt;d&lt;br&gt;as&lt;br&gt;d sa&lt;br&gt;dsa&lt;/p&gt;
-&lt;p&gt;d asd&lt;/p&gt;
-&lt;figure class=&quot;highlight go&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;</summary>
-      
-    
-    
-    
-    
-    <category term="Go" scheme="https://banatech.org/tags/Go/"/>
     
   </entry>
   
