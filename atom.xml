@@ -6,7 +6,7 @@
   <link href="https://banatech.org/atom.xml" rel="self"/>
   
   <link href="https://banatech.org/"/>
-  <updated>2022-05-09T06:46:30.612Z</updated>
+  <updated>2022-05-08T14:53:58.074Z</updated>
   <id>https://banatech.org/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test_create</title>
-    <link href="https://banatech.org/20220509/e60b93bae6c1.html"/>
-    <id>https://banatech.org/20220509/e60b93bae6c1.html</id>
-    <published>2022-05-09T06:35:54.000Z</published>
-    <updated>2022-05-09T06:46:30.612Z</updated>
-    
-    <content type="html"><![CDATA[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/20220509/e60b93bae6c1/1.jpg" alt="logo" title>                </div>                <div class="image-caption">logo</div>            </figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;figure class=&quot;image-bubble&quot;&gt;
-                &lt;div class=&quot;img-lightbox&quot;&gt;
-                    &lt;div class=&quot;overlay&quot;&gt;&lt;/div&gt;
-                   </summary>
-      
-    
-    
-    
-    
-    <category term="测试" scheme="https://banatech.org/tags/%E6%B5%8B%E8%AF%95/"/>
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
