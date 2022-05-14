@@ -6,7 +6,7 @@
   <link href="https://banatech.org/atom.xml" rel="self"/>
   
   <link href="https://banatech.org/"/>
-  <updated>2022-05-08T14:53:58.074Z</updated>
+  <updated>2022-05-14T06:35:49.688Z</updated>
   <id>https://banatech.org/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用Golang从零开发一个Web框架</title>
+    <link href="https://banatech.org/20220514/7ad2a5800a6e.html"/>
+    <id>https://banatech.org/20220514/7ad2a5800a6e.html</id>
+    <published>2022-05-14T06:18:12.000Z</published>
+    <updated>2022-05-14T06:35:49.688Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的<code>Spring</code> ,Python的<code>flask</code> 、<code>django</code> ,Go的 <code>Beego</code>、<code>Gin</code> 、<code>Iris</code> 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现什么功能。</p><p>下面我们看看使用Go语言标准库<code>net/http</code> 是如何去处理一个http请求的</p><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;net/http&quot;</span></span><br><span class="line">)</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    http.HandleFunc(<span class="string">&quot;/&quot;</span>,handler)</span><br><span class="line">    http.HandleFunc(<span class="string">&quot;count&quot;</span>,counter)</span><br><span class="line">    log.Fatal(http.ListenAndServe(<span class="string">&quot;:8080&quot;</span>,<span class="literal">nil</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">handler</span><span class="params">(w http.ResponseWriter , req *http.Request)</span></span>&#123;</span><br><span class="line">    fmt.Fprintf(w, <span class="string">&quot;URL:%s&quot;</span>,req.URL.Path)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h2&gt;&lt;p&gt;很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Jav</summary>
+      
+    
+    
+    
+    
+    <category term="Go" scheme="https://banatech.org/tags/Go/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
