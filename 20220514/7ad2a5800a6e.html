@@ -29,15 +29,15 @@
     
     
     <meta name="keywords" content="Go">
-    <meta name="description" content="序言很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的Spring ,Python的flask 、django ,Go的 Beego、Gin 、Iris 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现什么">
+    <meta name="description" content="序言很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,然而不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的Spring ,Python的flask 、django ,Go的 Beego、Gin 、Iris 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Golang从零开发一个Web框架">
 <meta property="og:url" content="https://banatech.org/20220514/7ad2a5800a6e.html">
 <meta property="og:site_name" content="Li &#39; s Blog">
-<meta property="og:description" content="序言很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的Spring ,Python的flask 、django ,Go的 Beego、Gin 、Iris 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现什么">
+<meta property="og:description" content="序言很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,然而不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的Spring ,Python的flask 、django ,Go的 Beego、Gin 、Iris 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-05-14T06:18:12.000Z">
-<meta property="article:modified_time" content="2022-05-14T06:35:49.688Z">
+<meta property="article:modified_time" content="2022-05-14T07:57:15.535Z">
 <meta property="article:author" content="李子灿">
 <meta property="article:tag" content="Go">
 <meta name="twitter:card" content="summary">
@@ -166,7 +166,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BA%8F%E8%A8%80"><span class="post-toc-number">1.</span> <span class="post-toc-text">序言</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%BA%8F%E8%A8%80"><span class="post-toc-number">1.</span> <span class="post-toc-text">序言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%AE%9E%E7%8E%B0%E8%B7%AF%E7%94%B1%E5%8A%9F%E8%83%BD"><span class="post-toc-number">2.</span> <span class="post-toc-text">实现路由功能</span></a></li></ol>
         </nav>
     </aside>
 
@@ -192,10 +192,23 @@
 
             </div>
             <div class="post-content" id="post-content" itemprop="postContent">
-                <h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的<code>Spring</code> ,Python的<code>flask</code> 、<code>django</code> ,Go的 <code>Beego</code>、<code>Gin</code> 、<code>Iris</code> 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现什么功能。</p>
+                <h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>很多时候当我们需要实现一个web应用，第一时间想到的就是去使用哪个框架,然而不同的框架有不同的设计理念,提供的功能也有很大的差别  ,比如Java的<code>Spring</code> ,Python的<code>flask</code> 、<code>django</code> ,Go的 <code>Beego</code>、<code>Gin</code> 、<code>Iris</code> 等。那我们为什么不直接使用语言提供的标准库编写呢？要回答这个问题，首先明白框架的核心应该为我们提供什么？只有理解这一点才能想明白我们在框架中需要实现什么功能。</p>
 <p>下面我们看看使用Go语言标准库<code>net/http</code> 是如何去处理一个http请求的</p>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;net/http&quot;</span></span><br><span class="line">)</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    http.HandleFunc(<span class="string">&quot;/&quot;</span>,handler)</span><br><span class="line">    http.HandleFunc(<span class="string">&quot;count&quot;</span>,counter)</span><br><span class="line">    log.Fatal(http.ListenAndServe(<span class="string">&quot;:8080&quot;</span>,<span class="literal">nil</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">handler</span><span class="params">(w http.ResponseWriter , req *http.Request)</span></span>&#123;</span><br><span class="line">    fmt.Fprintf(w, <span class="string">&quot;URL:%s&quot;</span>,req.URL.Path)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;net/http&quot;</span></span><br><span class="line">)</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    http.HandleFunc(<span class="string">&quot;/&quot;</span>,handler)</span><br><span class="line">    log.Fatal(http.ListenAndServe(<span class="string">&quot;:8080&quot;</span>,<span class="literal">nil</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">handler</span><span class="params">(w http.ResponseWriter , req *http.Request)</span></span>&#123;</span><br><span class="line">    fmt.Fprintf(w, <span class="string">&quot;URL:%s&quot;</span>,req.URL.Path)</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
+<p><code>net/http</code>库提供了基础的Web功能，如端口监听，映射静态路由，解析http报文 。</p>
+<p>一些简单且常用的功能基础库并不支持，这些就需要开发人员自己去实现。</p>
+<ul>
+<li><p>动态路由 如 <code>/user/:username</code> ,<code>/assets/*filepath</code>的这类规则</p>
+</li>
+<li><p>鉴权 没有统一的分组鉴权功能,需要在每个路由映射的handler 中实现。</p>
+</li>
+<li><p>模板 没有统一简单的HMML模板机制</p>
+</li>
+<li><p>…..</p>
+</li>
+</ul>
+<h2 id="实现路由功能"><a href="#实现路由功能" class="headerlink" title="实现路由功能"></a>实现路由功能</h2>
             </div>
 
             <blockquote class="post-copyright">
@@ -212,7 +225,7 @@
             </div>
             
 <span class="post-time">
-    最后更新时间：<time datetime="2022-05-14T06:35:49.688Z" itemprop="dateUpdated">2022-05-14 14:35:49</time>
+    最后更新时间：<time datetime="2022-05-14T07:57:15.535Z" itemprop="dateUpdated">2022-05-14 15:57:15</time>
 </span><br>
 
 
