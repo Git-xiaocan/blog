@@ -6,7 +6,7 @@
   <link href="https://banatech.org/atom.xml" rel="self"/>
   
   <link href="https://banatech.org/"/>
-  <updated>2022-05-18T15:08:07.073Z</updated>
+  <updated>2022-05-29T12:16:02.902Z</updated>
   <id>https://banatech.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MapReduce:\\ 大型集群上的简化数据处理\(论文翻译\)</title>
+    <link href="https://banatech.org/20220529/c3f5f361cc76.html"/>
+    <id>https://banatech.org/20220529/c3f5f361cc76.html</id>
+    <published>2022-05-29T12:14:07.000Z</published>
+    <updated>2022-05-29T12:16:02.902Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MapReduce-Simplifified-Data-Processing-on-Large-Clusters"><a href="#MapReduce-Simplifified-Data-Processing-on-Large-Clusters" class="headerlink" title="MapReduce: Simplifified Data Processing on Large Clusters"></a>MapReduce: Simplifified Data Processing on Large Clusters</h1><blockquote><p>MapReduce: 大型集群上的简化数据处理</p></blockquote><h2 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h2><blockquote><p>抽象</p></blockquote><p> MapReduce is a programming model and an associated implementation for processing and generating large data sets. Users specify a map function that processes a key&#x2F;value pair to generate a set of intermediate key&#x2F;value pairs, and a reduce function that merges all intermediate values associated with the same intermediate key. Many real world tasks are expressible in this model, as shown in the paper.</p><blockquote><p>MapReduce是一种编程模式和用于处理和生成大型数据集相关的实现,用户指定一个用于处理一个键值对和以及生成一组中间键值对的map函数,以及一个用于合并与同一中间键关联的所有中间值的reduce 函数。如论文所示，该模型可以表达许多现实世界的任务.</p></blockquote><p> Programs written in this functional style are automatically parallelized and executed on a large cluster of commodity machines. The run-time system takes care of the details of partitioning the input data, scheduling the program’s execution across a set of machines, handling machine failures, and managing the required inter-machine communication. This allows programmers without any experience with parallel and distributed systems to easily utilize the resources of a large distributed system.</p><blockquote><p>通过函数式编程编写的程序会自动并行化的大型商业集群上执行,运行时系统负责对输入的数据进行拆分、在一组机器上调度程序执行，处理机器故障以及管理所需的机器间通信等细节，这使得程序员无需任何并行和分布式经验就可以轻松的利用大型分布式系统的资源。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;MapReduce-Simplifified-Data-Processing-on-Large-Clusters&quot;&gt;&lt;a href=&quot;#MapReduce-Simplifified-Data-Processing-on-Large-Clusters&quot; class=</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>使用Golang从零实现一个简易Web框架</title>
